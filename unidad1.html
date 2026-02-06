@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unidad 1 | Portafolio</title>
+
+  <!-- Bootstrap + Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="hero-header">
+    <div class="container py-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+      <div class="d-flex align-items-center gap-3">
+        <img src="imagen/65749.jpg" alt="Universidad Tecnológica de Coahuila" class="hero-logo d-none d-sm-block">
+        <div>
+          <h1 class="mb-1">Unidad 1</h1>
+          <p class="mb-0 opacity-75">Introducción al Desarrollo Web Orientado a Servicios</p>
+        </div>
+      </div>
+
+      <a href="index.html" class="btn btn-light">
+        <i class="bi bi-arrow-left me-2"></i>Regresar al Inicio
+      </a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark hero-nav">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">
+          <i class="bi bi-folder2-open me-2"></i>Portafolio
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link active" href="unidad1.html">Unidad 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="unidad2.html">Unidad 2</a></li>
+            <li class="nav-item"><a class="nav-link" href="unidad3.html">Unidad 3</a></li>
+            <li class="nav-item"><a class="nav-link" href="unidad4.html">Unidad 4</a></li>
+            <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="container my-5">
+
+    <!-- RESUMEN -->
+    <section class="p-4 p-md-5 rounded-4 shadow-sm bg-white">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <h2 class="mb-2">Propósito de la Unidad</h2>
+          <p class="text-muted mb-3">
+            Esta unidad introduce el paradigma <b>orientado a servicios</b>, la arquitectura <b>SOA</b> y los
+            estándares más comunes para construir e integrar servicios: <b>XML</b>, <b>SOAP</b>, <b>WSDL</b>, <b>UDDI</b> y <b>REST</b>.
+            También se revisa el concepto de <b>Mashup</b> como integración de múltiples fuentes.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-dark-subtle text-dark rounded-pill px-3 py-2"><i class="bi bi-diagram-3 me-2"></i>Servicios</span>
+            <span class="badge bg-dark-subtle text-dark rounded-pill px-3 py-2"><i class="bi bi-layers me-2"></i>SOA</span>
+            <span class="badge bg-dark-subtle text-dark rounded-pill px-3 py-2"><i class="bi bi-plug me-2"></i>Estándares</span>
+            <span class="badge bg-dark-subtle text-dark rounded-pill px-3 py-2"><i class="bi bi-grid-1x2 me-2"></i>Mashup</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+              <h5 class="mb-2"><i class="bi bi-check2-circle me-2"></i>Objetivo</h5>
+              <p class="text-muted mb-0">
+                Identificar cómo los servicios se diseñan, publican y consumen en aplicaciones web modernas,
+                aplicando buenas prácticas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOQUES -->
+    <section class="mt-4">
+      <div class="row g-4">
+
+        <!-- 1) Paradigma -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm border-0 rounded-4 h-100 card-hover">
+            <div class="card-body p-4">
+              <h3 class="mb-2"><i class="bi bi-diagram-3 me-2"></i>1) Paradigma orientado a servicios</h3>
+              <p class="text-muted mb-3">
+                Organiza la funcionalidad en <b>servicios independientes</b> con interfaces claras, que se comunican por red.
+              </p>
+
+              <h6 class="mt-2">Modelos Cloud</h6>
+              <ul class="text-muted mb-0">
+                <li><b>IaaS</b>: infraestructura (servidores, red, almacenamiento).</li>
+                <li><b>PaaS</b>: plataforma para desplegar apps (runtime, BD).</li>
+                <li><b>SaaS</b>: software listo (correo, CRM, drive).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2) SOA + Estándares -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm border-0 rounded-4 h-100 card-hover">
+            <div class="card-body p-4">
+              <h3 class="mb-2"><i class="bi bi-layers me-2"></i>2) SOA y estándares</h3>
+              <p class="text-muted mb-3">
+                SOA construye sistemas con servicios publicables y consumibles, estandarizando la comunicación.
+              </p>
+
+              <div class="accordion" id="standards">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="hxml">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#xml" aria-controls="xml">
+                      XML
+                    </button>
+                  </h2>
+                  <div id="xml" class="accordion-collapse collapse show" data-bs-parent="#standards" aria-labelledby="hxml">
+                    <div class="accordion-body text-muted">Estructura datos para intercambio de información.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="hsoap">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#soap" aria-controls="soap">
+                      SOAP
+                    </button>
+                  </h2>
+                  <div id="soap" class="accordion-collapse collapse" data-bs-parent="#standards" aria-labelledby="hsoap">
+                    <div class="accordion-body text-muted">Mensajería estricta basada en XML.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="hwsdl">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wsdl" aria-controls="wsdl">
+                      WSDL
+                    </button>
+                  </h2>
+                  <div id="wsdl" class="accordion-collapse collapse" data-bs-parent="#standards" aria-labelledby="hwsdl">
+                    <div class="accordion-body text-muted">Describe operaciones y endpoints de un servicio SOAP.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="huddi">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#uddi" aria-controls="uddi">
+                      UDDI
+                    </button>
+                  </h2>
+                  <div id="uddi" class="accordion-collapse collapse" data-bs-parent="#standards" aria-labelledby="huddi">
+                    <div class="accordion-body text-muted">Registro para publicar y descubrir servicios.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="hrest">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rest" aria-controls="rest">
+                      REST
+                    </button>
+                  </h2>
+                  <div id="rest" class="accordion-collapse collapse" data-bs-parent="#standards" aria-labelledby="hrest">
+                    <div class="accordion-body text-muted">APIs con recursos y métodos HTTP (común con JSON).</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="alert alert-secondary mt-3 mb-0">
+                <b>Tip:</b> agrega capturas de Postman/Thunder Client como evidencia.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3) Web Services vs APIs -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm border-0 rounded-4 h-100 card-hover">
+            <div class="card-body p-4">
+              <h3 class="mb-2"><i class="bi bi-diagram-2 me-2"></i>3) Web Services vs APIs</h3>
+              <p class="text-muted mb-3">
+                Una <b>API</b> permite integración entre sistemas; un <b>Web Service</b> es una API expuesta en la web.
+                SOAP y REST son los enfoques más comunes.
+              </p>
+
+              <h6>Arquitecturas</h6>
+              <ul class="text-muted mb-0">
+                <li><b>Monolito</b>: todo en una app.</li>
+                <li><b>Microservicios</b>: módulos pequeños e independientes.</li>
+                <li><b>SOA</b>: base conceptual de servicios; microservicios es su evolución moderna.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4) SOAP vs REST -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm border-0 rounded-4 h-100 card-hover">
+            <div class="card-body p-4">
+              <h3 class="mb-2"><i class="bi bi-table me-2"></i>4) SOAP vs REST</h3>
+
+              <div class="table-responsive">
+                <table class="table align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Característica</th>
+                      <th>SOAP</th>
+                      <th>REST</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Formato</td><td>XML</td><td>JSON (común)</td></tr>
+                    <tr><td>Contrato</td><td>WSDL</td><td>OpenAPI (opcional)</td></tr>
+                    <tr><td>Complejidad</td><td>Mayor</td><td>Más simple</td></tr>
+                    <tr><td>Uso</td><td>Empresarial/legacy</td><td>Web/Móvil</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="alert alert-secondary mt-3 mb-0">
+                <b>Idea:</b> incluye una captura de una petición GET y otra POST en Postman.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5) Mashup -->
+        <div class="col-12">
+          <div class="card shadow-sm border-0 rounded-4 card-hover">
+            <div class="card-body p-4">
+              <h3 class="mb-2"><i class="bi bi-grid-1x2 me-2"></i>5) Mashup (Web híbrida)</h3>
+              <p class="text-muted mb-0">
+                Integra datos de varias fuentes en una sola vista (ej. mapa + clima + recomendaciones) consumiendo múltiples APIs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EVIDENCIAS -->
+    <section class="mt-4 p-4 p-md-5 rounded-4 shadow-sm bg-white">
+      <h3 class="mb-2">Evidencias (para tu entrega)</h3>
+      <p class="text-muted">Agrega capturas, pruebas y una conclusión breve para que tu portafolio se vea completo.</p>
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="p-3 border rounded-4">
+            <h6 class="mb-2"><i class="bi bi-file-earmark-text me-2"></i>Investigación</h6>
+            <ul class="text-muted mb-0">
+              <li>Resumen / glosario de términos.</li>
+              <li>Conclusión de la unidad.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3 border rounded-4">
+            <h6 class="mb-2"><i class="bi bi-terminal me-2"></i>Pruebas</h6>
+            <ul class="text-muted mb-0">
+              <li>Capturas de requests/responses en Postman.</li>
+              <li>Tabla SOAP vs REST.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-dark mt-4 mb-0">
+        <b>Conclusión sugerida:</b> SOA facilita construir aplicaciones integrables y escalables mediante estándares que mejoran la comunicación entre sistemas.
+      </div>
+    </section>
+
+    <!-- SABER HACER -->
+    <section class="mt-4 p-4 p-md-5 rounded-4 shadow-sm bg-white">
+      <h3 class="mb-3"><i class="bi bi-tools me-2"></i>Saber Hacer – Unidad 1</h3>
+      <p class="text-muted">Da clic en cada actividad para visualizarla.</p>
+
+      <div class="accordion" id="saberHacerU1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="sh1">
+            <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#saberHacer1" aria-controls="saberHacer1">
+              🛠️ Saber Hacer 1
+            </button>
+          </h2>
+
+          <div id="saberHacer1" class="accordion-collapse collapse" data-bs-parent="#saberHacerU1" aria-labelledby="sh1">
+            <div class="accordion-body p-0">
+              <iframe src="actividades/index.html" style="width:100%; height:700px; border:0;" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="sh2">
+            <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#saberHacer2" aria-controls="saberHacer2">
+              🛠️ Saber Hacer 2
+            </button>
+          </h2>
+
+          <div id="saberHacer2" class="accordion-collapse collapse" data-bs-parent="#saberHacerU1" aria-labelledby="sh2">
+            <div class="accordion-body text-muted">
+              <p class="mb-2"><b>Contenido pendiente:</b> aquí pondremos tu actividad real cuando me la pases.</p>
+              <ul class="mb-0">
+                <li>Indicaciones</li>
+                <li>Capturas</li>
+                <li>Conclusión</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer mt-5">
+    <div class="container py-4">
+      <div class="opacity-75">
+        Ernesto Daniel Morales Arellano • Universidad Tecnológica de Coahuila • Desarrollo Web Orientado a Servicios • 2026
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

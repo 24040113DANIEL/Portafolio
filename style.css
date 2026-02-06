@@ -1,0 +1,59 @@
+:root{
+  --hero1:#0f172a;   /* azul oscuro */
+  --hero2:#111827;   /* gris oscuro */
+}
+
+body{
+  background: #f6f7fb;
+}
+
+.hero-header{
+  background: linear-gradient(135deg, var(--hero1), var(--hero2));
+  color: white;
+}
+
+.hero-nav{
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.hero-logo{
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.08);
+  padding: 8px;
+  border-radius: 14px;
+}
+
+.welcome{
+  background: white;
+}
+
+.icon-bubble{
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: #111827;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.card-hover{
+  transition: transform .15s ease, box-shadow .15s ease;
+  border: 0;
+  border-radius: 18px;
+}
+
+.card-hover:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.12) !important;
+}
+
+.footer{
+  background: #0b1220;
+  color: white;
+}

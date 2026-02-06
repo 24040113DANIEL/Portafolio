@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 2 | Portafolio</title>
+
+  <!-- Bootstrap + Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="hero-header">
+    <div class="container py-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+      <div class="d-flex align-items-center gap-3">
+        <img src="imagen/65749.jpg" alt="UTC" class="hero-logo d-none d-sm-block">
+        <div>
+          <h1 class="mb-1">Unidad 2</h1>
+          <p class="mb-0 opacity-75">Aplicaciones Web Orientadas a Servicios (APIs)</p>
+        </div>
+      </div>
+
+      <a href="index.html" class="btn btn-light">
+        <i class="bi bi-arrow-left me-2"></i>Regresar
+      </a>
+    </div>
+
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark hero-nav">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">
+          <i class="bi bi-folder2-open me-2"></i>Portafolio
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="unidad1.php">Unidad 1</a></li>
+            <li class="nav-item"><a class="nav-link active" href="unidad2.php">Unidad 2</a></li>
+            <li class="nav-item"><a class="nav-link" href="unidad3.php">Unidad 3</a></li>
+            <li class="nav-item"><a class="nav-link" href="unidad4.php">Unidad 4</a></li>
+            <li class="nav-item"><a class="nav-link" href="acerca.php">Acerca</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="container my-5">
+
+    <!-- RESUMEN -->
+    <section class="p-4 p-md-5 rounded-4 shadow-sm bg-white">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <h2 class="mb-2">Resumen de la Unidad</h2>
+          <p class="text-muted mb-3">
+            En esta unidad se revisan servicios comunes en aplicaciones modernas y cómo se integran mediante APIs:
+            <b>geolocalización</b>, <b>redes sociales</b>, <b>bases de datos</b>, <b>plataformas on-line</b> y <b>streaming</b>.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-dark-subtle text-dark rounded-pill px-3 py-2"><i class="bi bi-geo-alt me-2"></i>Geolocalización</span>
+            <span class="badge bg-dark-subtle text-dark rounded-pill px-3 py-2"><i class="bi bi-share me-2"></i>Redes Sociales</span>
+            <span class="badge bg-dark-subtle text-dark rounded-pill px-3 py-2"><i class="bi bi-database me-2"></i>Bases de Datos</span>
+            <span class="badge bg-dark-subtle text-dark rounded-pill px-3 py-2"><i class="bi bi-cloud me-2"></i>On-line</span>
+            <span class="badge bg-dark-subtle text-dark rounded-pill px-3 py-2"><i class="bi bi-play-circle me-2"></i>Streaming</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+              <h5 class="mb-2"><i class="bi bi-check2-circle me-2"></i>Objetivo</h5>
+              <p class="text-muted mb-0">
+                Aplicar buenas prácticas al integrar servicios externos: permisos, seguridad, manejo de datos y UX.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEMAS -->
+    <section class="mt-5">
+      <div class="text-center mb-4">
+        <h3 class="mb-1">Temas de la Unidad 2</h3>
+        <p class="text-muted mb-0">Descripción corta + enfoque práctico.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-bubble"><i class="bi bi-geo-alt"></i></div>
+                <div>
+                  <h5 class="mb-0">Geolocalización</h5>
+                  <small class="text-muted">Ubicación, mapas y coordenadas</small>
+                </div>
+              </div>
+              <p class="text-muted mb-2">Obtiene la ubicación (con permiso) para mostrar mapas, puntos de interés o rutas.</p>
+              <ul class="text-muted mb-0">
+                <li>Lat/Lng, dirección ↔ coordenadas</li>
+                <li>Permisos y privacidad del usuario</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-bubble"><i class="bi bi-share"></i></div>
+                <div>
+                  <h5 class="mb-0">Redes Sociales</h5>
+                  <small class="text-muted">OAuth, compartir y embeds</small>
+                </div>
+              </div>
+              <p class="text-muted mb-2">Permite login social y difusión de contenido mediante APIs oficiales.</p>
+              <ul class="text-muted mb-0">
+                <li>OAuth y permisos mínimos</li>
+                <li>HTTPS y cuidado de tokens</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-bubble"><i class="bi bi-database"></i></div>
+                <div>
+                  <h5 class="mb-0">Bases de Datos</h5>
+                  <small class="text-muted">Persistencia y consultas</small>
+                </div>
+              </div>
+              <p class="text-muted mb-2">Guarda información y se conecta a una API para validar y proteger datos.</p>
+              <ul class="text-muted mb-0">
+                <li>SQL/NoSQL</li>
+                <li>Prepared statements (evitar SQLi)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-bubble"><i class="bi bi-cloud"></i></div>
+                <div>
+                  <h5 class="mb-0">Plataformas On-line</h5>
+                  <small class="text-muted">Hosting y despliegue</small>
+                </div>
+              </div>
+              <p class="text-muted mb-2">Publicación del portafolio y uso de servicios listos (hosting, storage, CI/CD).</p>
+              <ul class="text-muted mb-0">
+                <li>GitHub Pages / hosting gratuito</li>
+                <li>Buenas prácticas de despliegue</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-bubble"><i class="bi bi-play-circle"></i></div>
+                <div>
+                  <h5 class="mb-0">Streaming</h5>
+                  <small class="text-muted">Consumo de multimedia bajo demanda</small>
+                </div>
+              </div>
+              <p class="text-muted mb-0">
+                Reproducción de audio/video por internet usando servicios distribuidos, CDN y control de acceso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SABER HACER -->
+    <section class="mt-5">
+      <div class="sh-card p-4 p-md-5">
+        <h2 class="sh-title mb-2"><span class="sh-icon">🛠️</span> Saber Hacer – Unidad 2</h2>
+        <p class="sh-subtitle mb-4">Da clic en cada actividad para visualizarla.</p>
+
+        <div class="accordion sh-accordion" id="saberHacerU2">
+
+          <!-- Saber Hacer 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="u2h1">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#u2s1"
+                      aria-expanded="false" aria-controls="u2s1">
+                <span class="me-2">🛠️</span> Saber Hacer 1 (Geolocalización)
+              </button>
+            </h2>
+
+            <div id="u2s1" class="accordion-collapse collapse" data-bs-parent="#saberHacerU2" aria-labelledby="u2h1">
+              <div class="accordion-body p-0">
+                <iframe
+                  src="https://24040113daniel.github.io/geo/"
+                  style="width:100%; height:700px; border:0;"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  allow="geolocation *">
+                </iframe>
+              </div>
+
+              <!-- Fallback -->
+              <div class="p-3 border-top bg-light">
+                <small class="text-muted">
+                  Si el navegador bloquea la ubicación dentro del iframe, abre la actividad en una pestaña nueva:
+                  <a href="https://24040113daniel.github.io/geo/" target="_blank" rel="noopener" class="fw-semibold">
+                    Abrir Geolocalización
+                  </a>
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Saber Hacer 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="u2h2">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#u2s2"
+                      aria-expanded="false" aria-controls="u2s2">
+                <span class="me-2">🛠️</span> Saber Hacer 2
+              </button>
+            </h2>
+
+            <div id="u2s2" class="accordion-collapse collapse" data-bs-parent="#saberHacerU2" aria-labelledby="u2h2">
+              <div class="accordion-body p-0">
+                <iframe
+                  src="actividades2/index.html"
+                  style="width:100%; height:700px; border:0;"
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer mt-5">
+    <div class="container py-4 d-flex flex-column flex-md-row justify-content-between gap-2">
+      <div>
+        <div class="fw-semibold">Ernesto Daniel Morales Arellano</div>
+        <div class="opacity-75">UTC • Desarrollo Web Orientado a Servicios</div>
+        <div class="opacity-75">Cuatrimestre 4 • 2026</div>
+      </div>
+      <a class="link-light text-decoration-none" href="#" target="_blank" rel="noopener">
+        <i class="bi bi-github me-2"></i>Repositorio / Hosting
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

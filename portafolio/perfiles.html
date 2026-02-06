@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfiles del Equipo | Portafolio</title>
+
+  <!-- Bootstrap + Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Estilos del proyecto -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Estilos SOLO para esta página -->
+  <style>
+    .profile-photo{
+      width: 96px; height: 96px; border-radius: 22px;
+      object-fit: cover; background:#fff;
+      border: 2px solid rgba(0,0,0,.08);
+    }
+    .chip{
+      display:inline-flex; align-items:center; gap:.35rem;
+      padding:.35rem .75rem; border-radius:999px;
+      background:#f1f5f9; color:#0f172a;
+      font-size:.85rem; border:1px solid rgba(15,23,42,.08);
+    }
+    .mini-card{
+      border:1px solid rgba(15,23,42,.08);
+      border-radius:16px; padding:12px 14px; background:#fff;
+      height:100%;
+    }
+    .mini-title{ font-weight:700; margin-bottom:8px; color:#0f172a; }
+    .mini-list{ margin:0; padding-left:1.1rem; color:#64748b; }
+    .mini-list li{ margin-bottom:.25rem; }
+    .hero-strip{
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(0,0,0,.18);
+      border-radius: 18px;
+      padding: 14px 16px;
+    }
+    .btns a{ white-space: nowrap; }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="hero-header">
+    <div class="container py-4">
+      <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <img src="imagen/65749.jpg" alt="UTC" class="hero-logo d-none d-sm-block">
+          <div>
+            <h1 class="mb-1">Perfiles del Equipo</h1>
+            <p class="mb-0 opacity-75">Portafolio de Evidencias • Desarrollo Web Orientado a Servicios</p>
+          </div>
+        </div>
+
+        <a href="index.html" class="btn btn-light">
+          <i class="bi bi-arrow-left me-2"></i>Regresar al Inicio
+        </a>
+      </div>
+
+      <div class="hero-strip mt-3 text-white-50">
+        <div class="row g-2 align-items-center">
+          <div class="col-lg-8">
+            <span class="text-white fw-semibold">Universidad Tecnológica de Coahuila (UTC)</span> •
+            Carrera: <span class="text-white">TIDSMC</span> • Grupo: <span class="text-white">5C</span>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            Maestro: <span class="text-white fw-semibold">David López Belmares</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark hero-nav">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">
+          <i class="bi bi-folder2-open me-2"></i>Portafolio
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="unidad1.php">Unidad 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="unidad2.php">Unidad 2</a></li>
+            <li class="nav-item"><a class="nav-link" href="unidad3.php">Unidad 3</a></li>
+            <li class="nav-item"><a class="nav-link" href="unidad4.php">Unidad 4</a></li>
+            <li class="nav-item"><a class="nav-link active" href="perfiles.php">Perfiles</a></li>
+            <li class="nav-item"><a class="nav-link" href="acerca.php">Acerca de</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- Intro -->
+    <section class="p-4 p-md-5 rounded-4 shadow-sm bg-white">
+      <h2 class="mb-2">Equipo de Desarrollo</h2>
+      <p class="text-muted mb-0">
+        Integrantes responsables del portafolio: rol, fortalezas, tecnologías y enlaces de trabajo.
+      </p>
+    </section>
+
+    <!-- Perfiles -->
+    <section class="mt-4">
+      <div class="row g-4">
+
+        <!-- Eduardo -->
+        <div class="col-lg-6">
+          <article class="card shadow-sm border-0 rounded-4 card-hover h-100">
+            <div class="card-body p-4">
+              <header class="d-flex gap-3 align-items-center">
+                <img src="imagen/perfil-eduardo.jpg" alt="Foto de Eduardo Hassiel Adame Venancio" class="profile-photo">
+                <div class="flex-grow-1">
+                  <div class="d-flex flex-wrap align-items-center gap-2">
+                    <h4 class="mb-0">Eduardo Hassiel Adame Venancio</h4>
+                    <span class="badge text-bg-dark rounded-pill">Integrante</span>
+                  </div>
+                  <div class="text-muted mt-1">
+                    <i class="bi bi-mortarboard me-1"></i>UTC • TIDSMC • 5C
+                  </div>
+                  <div class="mt-2 d-flex flex-wrap gap-2">
+                    <span class="chip"><i class="bi bi-brush"></i>Frontend</span>
+                    <span class="chip"><i class="bi bi-phone"></i>Responsive</span>
+                    <span class="chip"><i class="bi bi-plug"></i>APIs</span>
+                  </div>
+                </div>
+              </header>
+
+              <hr class="my-4">
+
+              <p class="text-muted mb-3">
+                Enfoque en interfaces modernas y responsivas, cuidando estructura, accesibilidad y consistencia visual.
+                Apoya en integración de servicios web mediante consumo de APIs.
+              </p>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="mini-card">
+                    <div class="mini-title"><i class="bi bi-stars me-2"></i>Fortalezas</div>
+                    <ul class="mini-list">
+                      <li>Diseño UI consistente</li>
+                      <li>Maquetación con Bootstrap</li>
+                      <li>Componentes reutilizables</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mini-card">
+                    <div class="mini-title"><i class="bi bi-tools me-2"></i>Tecnologías</div>
+                    <ul class="mini-list">
+                      <li>HTML • CSS • Bootstrap</li>
+                      <li>JavaScript (básico)</li>
+                      <li>Consumo de APIs REST</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <footer class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-4">
+                <div class="text-muted small"><i class="bi bi-geo-alt me-1"></i>Saltillo, Coahuila (MX)</div>
+                <div class="d-flex gap-2 btns">
+                  <a class="btn btn-outline-dark btn-sm" href="#" target="_blank" rel="noopener">
+                    <i class="bi bi-github me-1"></i>GitHub
+                  </a>
+                  <a class="btn btn-outline-dark btn-sm" href="#" target="_blank" rel="noopener">
+                    <i class="bi bi-linkedin me-1"></i>LinkedIn
+                  </a>
+                  <a class="btn btn-outline-dark btn-sm" href="#" target="_blank" rel="noopener">
+                    <i class="bi bi-instagram me-1"></i>Instagram
+                  </a>
+                </div>
+              </footer>
+            </div>
+          </article>
+        </div>
+
+        <!-- Ernesto -->
+        <div class="col-lg-6">
+          <article class="card shadow-sm border-0 rounded-4 card-hover h-100">
+            <div class="card-body p-4">
+              <header class="d-flex gap-3 align-items-center">
+                <img src="imagen/perfil-ernesto.jpg" alt="Foto de Ernesto Daniel Morales Arellano" class="profile-photo">
+                <div class="flex-grow-1">
+                  <div class="d-flex flex-wrap align-items-center gap-2">
+                    <h4 class="mb-0">Ernesto Daniel Morales Arellano</h4>
+                    <span class="badge text-bg-dark rounded-pill">Integrante</span>
+                  </div>
+                  <div class="text-muted mt-1">
+                    <i class="bi bi-mortarboard me-1"></i>UTC • TIDSMC • 5C
+                  </div>
+                  <div class="mt-2 d-flex flex-wrap gap-2">
+                    <span class="chip"><i class="bi bi-code-slash"></i>PHP</span>
+                    <span class="chip"><i class="bi bi-database"></i>MySQL</span>
+                    <span class="chip"><i class="bi bi-shield-check"></i>Buenas prácticas</span>
+                  </div>
+                </div>
+              </header>
+
+              <hr class="my-4">
+
+              <p class="text-muted mb-3">
+                Orientado a desarrollo web e integración de servicios mediante APIs. Apoya en estructura del portafolio,
+                organización por unidad y documentación de evidencias, cuidando orden y calidad.
+              </p>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="mini-card">
+                    <div class="mini-title"><i class="bi bi-stars me-2"></i>Fortalezas</div>
+                    <ul class="mini-list">
+                      <li>Estructura del proyecto</li>
+                      <li>PHP + MySQL</li>
+                      <li>Documentación y evidencias</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mini-card">
+                    <div class="mini-title"><i class="bi bi-tools me-2"></i>Tecnologías</div>
+                    <ul class="mini-list">
+                      <li>PHP • MySQL • XAMPP</li>
+                      <li>Bootstrap • CSS</li>
+                      <li>APIs REST (pruebas)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <footer class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-4">
+                <div class="text-muted small"><i class="bi bi-geo-alt me-1"></i>Saltillo, Coahuila (MX)</div>
+                <div class="d-flex gap-2 btns">
+                  <a class="btn btn-outline-dark btn-sm" href="#" target="_blank" rel="noopener">
+                    <i class="bi bi-github me-1"></i>GitHub
+                  </a>
+                  <a class="btn btn-outline-dark btn-sm" href="#" target="_blank" rel="noopener">
+                    <i class="bi bi-linkedin me-1"></i>LinkedIn
+                  </a>
+                  <a class="btn btn-outline-dark btn-sm" href="#" target="_blank" rel="noopener">
+                    <i class="bi bi-instagram me-1"></i>Instagram
+                  </a>
+                </div>
+              </footer>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Asignatura -->
+    <section class="mt-4">
+      <div class="card border-0 shadow-sm rounded-4">
+        <div class="card-body p-4 p-md-5">
+          <div class="row g-3 align-items-center">
+            <div class="col-lg-8">
+              <h5 class="mb-1"><i class="bi bi-journal-text me-2"></i>Asignatura y responsable</h5>
+              <p class="text-muted mb-0">
+                Proyecto: <b>Portafolio de Evidencias</b> • Materia: <b>Desarrollo Web Orientado a Servicios</b> •
+                Maestro: <b>David López Belmares</b>.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="index.html" class="btn btn-dark">
+                Volver al inicio <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer mt-5">
+    <div class="container py-4">
+      <div class="opacity-75">
+        Ernesto Daniel Morales Arellano • Universidad Tecnológica de Coahuila • Desarrollo Web Orientado a Servicios • 2026
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

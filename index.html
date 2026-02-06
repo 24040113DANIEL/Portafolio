@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio de Evidencias | Desarrollo Web Orientado a Servicios</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="hero-header">
+    <div class="container py-4">
+      <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <!-- Logo UTC -->
+          <img src="imagen/65749.jpg"
+               alt="Universidad Tecnológica de Coahuila"
+               class="hero-logo d-none d-sm-block">
+
+          <div>
+            <h1 class="mb-1">Portafolio de Evidencias</h1>
+            <p class="mb-0 opacity-75">Desarrollo Web Orientado a Servicios</p>
+          </div>
+        </div>
+
+
+
+  </header>
+
+  <!-- BIENVENIDA -->
+  <main class="container my-5">
+    <section class="p-4 p-md-5 rounded-4 shadow-sm welcome">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <h2 class="mb-2">Bienvenido(a)</h2>
+          <p class="mb-3">
+            Este portafolio presenta las evidencias del desarrollo de una aplicación web orientada a servicios,
+            aplicando conceptos de arquitectura SOA y uso de APIs.
+          </p>
+          <ul class="mb-0">
+            <li>Propósito: evidenciar lo aprendido por unidades y prácticas.</li>
+            <li>Contenido: teoría + implementación (interfaces, consumo y desarrollo de APIs).</li>
+            <li>Objetivo del proyecto: diseñar y desarrollar una aplicación web con buenas prácticas.</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 text-lg-end">
+          <div class="badge bg-dark-subtle text-dark px-3 py-2 rounded-pill mb-2">
+            <i class="bi bi-globe2 me-2"></i>Aplicación Web
+          </div>
+          <div class="badge bg-dark-subtle text-dark px-3 py-2 rounded-pill mb-2">
+            <i class="bi bi-diagram-3 me-2"></i>SOA + APIs
+          </div>
+          <div class="badge bg-dark-subtle text-dark px-3 py-2 rounded-pill">
+            <i class="bi bi-check2-circle me-2"></i>Buenas prácticas
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTÓN VER PERFILES -->
+    <section class="mt-5">
+      <div class="card border-0 shadow-sm rounded-4">
+        <div class="card-body p-4 p-md-5">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <h3 class="mb-2">Equipo de Desarrollo</h3>
+              <p class="text-muted mb-0">
+                Conoce a los integrantes responsables del desarrollo del portafolio, su formación académica,
+                roles dentro del proyecto y redes profesionales.
+              </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+              <a href="perfiles.php" class="btn btn-dark btn-lg">
+                <i class="bi bi-people-fill me-2"></i>Ver perfiles del equipo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARJETAS -->
+    <section class="mt-5">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3">
+        <div>
+          <h3 class="mb-1">Unidades del Portafolio</h3>
+          <p class="mb-0 text-muted">Selecciona una unidad para ver sus evidencias y contenido.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- U1 -->
+        <div class="col-md-6 col-xl-3">
+          <div class="card h-100 shadow-sm card-hover">
+            <div class="card-body">
+              <div class="icon-bubble mb-3"><i class="bi bi-lightbulb"></i></div>
+              <h5 class="card-title">Unidad 1</h5>
+              <p class="card-text text-muted">
+                Paradigma orientado a servicios, SOA, estándares (XML, SOAP, WSDL, UDDI, REST) y Mashups.
+              </p>
+              <a class="btn btn-dark w-100" href="unidad1.php">
+                Ver Unidad 1 <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- U2 -->
+        <div class="col-md-6 col-xl-3">
+          <div class="card h-100 shadow-sm card-hover">
+            <div class="card-body">
+              <div class="icon-bubble mb-3"><i class="bi bi-plug"></i></div>
+              <h5 class="card-title">Unidad 2</h5>
+              <p class="card-text text-muted">
+                Geolocalización, redes sociales, bases de datos, plataformas on-line y streaming.
+              </p>
+              <a class="btn btn-dark w-100" href="unidad2.php">
+                Ver Unidad 2 <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- U3 -->
+        <div class="col-md-6 col-xl-3">
+          <div class="card h-100 shadow-sm card-hover">
+            <div class="card-body">
+              <div class="icon-bubble mb-3"><i class="bi bi-code-slash"></i></div>
+              <h5 class="card-title">Unidad 3</h5>
+              <p class="card-text text-muted">
+                Desarrollo de API: arquitectura, rutas, validaciones, documentación y seguridad básica.
+              </p>
+              <a class="btn btn-dark w-100" href="unidad3.php">
+                Ver Unidad 3 <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- U4 -->
+        <div class="col-md-6 col-xl-3">
+          <div class="card h-100 shadow-sm card-hover">
+            <div class="card-body">
+              <div class="icon-bubble mb-3"><i class="bi bi-rocket-takeoff"></i></div>
+              <h5 class="card-title">Unidad 4</h5>
+              <p class="card-text text-muted">
+                Implementación: despliegue, hosting, URL pública, evidencias y conclusiones.
+              </p>
+              <a class="btn btn-dark w-100" href="unidad4.php">
+                Ver Unidad 4 <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer mt-5">
+    <div class="container py-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-8">
+          <div class="fw-semibold">Ernesto Daniel Morales Arellano</div>
+          <div class="opacity-75">UTC • Desarrollo Web Orientado a Servicios</div>
+          <div class="opacity-75">Cuatrimestre: <span class="fw-medium">2026</span></div>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <a class="link-light text-decoration-none" href="#" target="_blank" rel="noopener">
+            <i class="bi bi-github me-2"></i>Repositorio / Hosting
+          </a>
+          <div class="opacity-50 small mt-1">© Derechos reservados (opcional)</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
